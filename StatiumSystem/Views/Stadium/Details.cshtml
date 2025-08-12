@@ -1,0 +1,42 @@
+﻿@model Stadium
+
+@{
+    ViewData["Title"] = "Stadium Details";
+}
+
+<h2>@Model.Name</h2>
+
+@if (!string.IsNullOrEmpty(Model.ImageUrl))
+{
+    <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid mb-3" style="max-width:400px;" />
+}
+
+<p><strong>Stadium ID:</strong> @Model.Id</p>
+
+<hr />
+
+@if (User.Identity.IsAuthenticated)
+{
+    @if (!User.IsInRole("Admin"))
+    {
+        <div class="alert alert-success d-flex justify-content-between align-items-center">
+            <span>Now, You Can Make a Reservation</span>
+            <a asp-controller="Reservation" asp-action="Create" asp-route-stadiumId="@Model.Id" class="btn btn-success btn-sm">Reserve</a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            for Users Only, No Admins
+        </div>
+    }
+}
+else
+{
+    <div class="alert alert-warning">
+        Please Register before Make a Reservation
+    </div>
+}
+
+
+<a asp-action="Index" class="btn btn-secondary mt-2">Bact to All Stadium</a>
