@@ -7,7 +7,7 @@ import AdminCheck from '@/Views/AdminCheck.vue';
 import ManageStadiums from '@/Views/ManageStadiums.vue';
 import { useAuthStore } from "@/store/authstore";
 import ReserveStadium from "../Views/ReserveStadium.vue";
-import MyReservations from '@/Views/MyReservations.vue'; // اختياري
+import MyReservations from '@/Views/MyReservations.vue';
 import AllReservations from '@/Views/AllReservations.vue';
 
 const routes = [
@@ -47,7 +47,7 @@ const routes = [
     name: 'MyReservations', 
     path: '/my-reservations', 
     component: MyReservations 
-  }, // optional
+  },
 { 
     name: 'AllReservations', 
     path: '/All-reservations', 

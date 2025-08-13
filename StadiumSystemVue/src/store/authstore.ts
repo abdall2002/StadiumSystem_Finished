@@ -1,4 +1,3 @@
-// stores/authStore.ts
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
@@ -20,7 +19,7 @@ export const useAuthStore = defineStore('auth', {
 
         const token = response.data.token
         const role = response.data.role
-        const userName = response.data.userName || email // لو backend يرجعه
+        const userName = response.data.userName || email 
 
         this.token = token
         this.role = role

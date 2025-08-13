@@ -78,7 +78,6 @@ const fetchMyReservations = async () => {
     loading.value = false;
   }
 };
-// إلغاء الحجز
 const cancelReservation = async (id) => {
   if (!confirm("Are you sure you want to cancel this reservation?")) return;
 

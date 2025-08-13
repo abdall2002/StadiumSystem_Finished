@@ -1,4 +1,3 @@
-// stores/auth.js
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import router from '@/router'
