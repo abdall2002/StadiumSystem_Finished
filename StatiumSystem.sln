@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatiumSystem", "StatiumSys
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StadiumSystem.Model", "StadiumSystem.Model\StadiumSystem.Model.csproj", "{5FA3D5CA-AE65-4E16-934D-430397B8CE90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StadiumSystemApi", "StadiumSystemApi\StadiumSystemApi.csproj", "{8E1DC49B-BAF4-43F4-AC9D-BB93A5030ACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5FA3D5CA-AE65-4E16-934D-430397B8CE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FA3D5CA-AE65-4E16-934D-430397B8CE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FA3D5CA-AE65-4E16-934D-430397B8CE90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1DC49B-BAF4-43F4-AC9D-BB93A5030ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1DC49B-BAF4-43F4-AC9D-BB93A5030ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1DC49B-BAF4-43F4-AC9D-BB93A5030ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1DC49B-BAF4-43F4-AC9D-BB93A5030ACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

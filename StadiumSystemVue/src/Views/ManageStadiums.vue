@@ -71,7 +71,7 @@ onMounted(() => {
 })
 
 const fetchStadiums = async () => {
-  const res = await axios.get('https://localhost:7279/api/StadiumsApi', {
+  const res = await axios.get('https://localhost:7050/api/StadiumsApi', {
     headers: {
       Authorization: `Bearer ${auth.token}`
     }
@@ -99,14 +99,14 @@ const saveStadium = async () => {
   debugger
   const token = localStorage.getItem('token')
   if (isEditing.value) {
-    await axios.put(`https://localhost:7279/api/StadiumsApi/${form.value.id}`, form.value, {
+    await axios.put(`https://localhost:7050/api/StadiumsApi/${form.value.id}`, form.value, {
       headers: { Authorization: `Bearer ${token}` }
     })
   } else {
     debugger
     console.log("Token:",token)
   try {
-    await axios.post('https://localhost:7279/api/StadiumsApi', form.value, {
+    await axios.post('https://localhost:7050/api/StadiumsApi', form.value, {
       headers: { Authorization: `Bearer ${token}` }
     })
     closeModal()
@@ -122,7 +122,7 @@ const saveStadium = async () => {
 
 const deleteStadium = async (id) => {
   if (!confirm('Are you sure?')) return
-  await axios.delete(`https://localhost:7279/api/StadiumsApi/${id}`, {
+  await axios.delete(`https://localhost:7050/api/StadiumsApi/${id}`, {
     headers: { Authorization: `Bearer ${auth.token}` }
   })
   fetchStadiums()

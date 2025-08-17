@@ -4,6 +4,7 @@
     <main class="container py-4">
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -11,7 +12,7 @@
 import { ref, onMounted } from "vue";
 import api from "../src/api";
 import Navbar from "./components/Navbar.vue";
-
+import Footer from "../src/components/Footer.vue";
 const stadiums = ref([]);
 const loading = ref(true);
 

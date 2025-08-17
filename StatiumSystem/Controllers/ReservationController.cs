@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using StadiumSystem.Models;
 using AutoMapper;
 using StatiumSystem.Models;
 

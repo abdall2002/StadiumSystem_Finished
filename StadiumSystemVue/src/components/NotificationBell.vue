@@ -43,7 +43,7 @@ const fetchNotifications = async () => {
       ? "/api/ReservationsApi/admin/pending-reservations"
       : "/api/ReservationsApi/user/notifications";
 
-    const res = await axios.get(`https://localhost:7279${endpoint}`, {
+    const res = await axios.get(`https://localhost:7050${endpoint}`, {
       headers: { Authorization: `Bearer ${auth.token}` },
     });
 

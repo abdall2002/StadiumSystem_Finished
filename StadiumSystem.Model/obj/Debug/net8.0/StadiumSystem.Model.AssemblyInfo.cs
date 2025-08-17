@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StadiumSystem.Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b499784e86b391d9ee92cbd70b847b8907638d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1f86a05737ccc14670c850cc7800df76b087188")]
 [assembly: System.Reflection.AssemblyProductAttribute("StadiumSystem.Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StadiumSystem.Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

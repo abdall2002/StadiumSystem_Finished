@@ -83,7 +83,7 @@ const cancelReservation = async (id) => {
 
   try {
     await axios.put(
-      `https://localhost:7279/api/ReservationsApi/Cancel/${id}`,
+      `https://localhost:7050/api/ReservationsApi/Cancel/${id}`,
       {},
       {
         headers: {

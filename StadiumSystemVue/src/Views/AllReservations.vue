@@ -73,7 +73,7 @@ export default {
       try {
         const authStore = useAuthStore();
         const res = await axios.get(
-          "https://localhost:7279/api/ReservationsApi/AllReservations",
+          "https://localhost:7050/api/ReservationsApi/AllReservations",
           {
             headers: {
               Authorization: `Bearer ${authStore.token}`,
@@ -92,7 +92,7 @@ export default {
       try {
         const authStore = useAuthStore();
         await axios.put(
-          `https://localhost:7279/api/ReservationsApi/UpdateStatus/${id}`,
+          `https://localhost:7050/api/ReservationsApi/UpdateStatus/${id}`,
           { status },
           {
             headers: {
